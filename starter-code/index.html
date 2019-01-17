@@ -40,8 +40,36 @@
   </section>
   <section class="container">
     <section class="form-container">
+
       <h2>New Character</h2>
       <form id="new-character-form" class="character-form">
+        <div class="field">
+          <label for="name">Name: </label>
+          <input class="new-name" type="text" name="name">
+        </div>
+        <div class="field">
+          <label for="occupation">Occupation: </label>
+          <input class="new-occupation" type="text" name="occupation">
+        </div>
+        <div class="field">
+          <label for="weapon">Weapon: </label>
+          <input class="new-weapon" type="text" name="weapon">
+        </div>
+        <div class="field">
+          <label for="cartoon">Is a Cartoon: </label>
+          <input class="new-cartoon" name="cartoon" type="checkbox">
+        </div>
+        <button class="new-create" id="send-data">Create</button>
+      </form>
+    </section>
+    <section class="form-container">
+
+      <h2>Edit Character</h2>
+      <form id="edit-character-form" class="character-form">
+        <div class="field">
+          <label for="id">ID: </label>
+          <input class="the-id" class='' type="text" name="chr-id">
+        </div>
         <div class="field">
           <label for="name">Name: </label>
           <input class="the-name" type="text" name="name">
@@ -58,34 +86,9 @@
           <label for="cartoon">Is a Cartoon: </label>
           <input class="the-cartoon" name="cartoon" type="checkbox">
         </div>
-        <button id="send-data">Create</button>
-      </form>
-    </section>
-    <section class="form-container">
-      <h2>Edit Character</h2>
-      <form id="edit-character-form" class="character-form">
-        <div class="field">
-          <label for="id">ID: </label>
-          <input type="text" name="chr-id">
-        </div>
-        <div class="field">
-          <label for="name">Name: </label>
-          <input type="text" name="name">
-        </div>
-        <div class="field">
-          <label for="occupation">Occupation: </label>
-          <input type="text" name="occupation">
-        </div>
-        <div class="field">
-          <label for="weapon">Weapon: </label>
-          <input type="text" name="weapon">
-        </div>
-        <div class="field">
-          <label for="cartoon">Is a Cartoon: </label>
-          <input name="cartoon" type="checkbox">
-        </div>
         <button id="send-data">Update</button>
       </form>
+
     </section>
   </section>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
